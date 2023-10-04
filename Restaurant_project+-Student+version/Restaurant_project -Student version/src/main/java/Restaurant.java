@@ -10,7 +10,7 @@ public class Restaurant {
     public LocalTime openingTime;
     public LocalTime closingTime;
     private List<Item> menu = new ArrayList<Item>();
-    //private List<Item> selectedItems = new ArrayList<Item>();
+    private List<Item> selectedItems = new ArrayList<Item>();
 
     public Restaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         this.name = name;
@@ -40,22 +40,21 @@ public class Restaurant {
         }
         return null;
     }
-    /*public int findTotalPrice(){
+    public int findTotalPrice(){
         int totalPrice = 0;
-        for(Item item: selectedItems) {
+        /*for(Item item: selectedItems) {
             totalPrice = totalPrice + item.getPrice();
-        }
+        }*/
         return totalPrice;
-    }*/
+    }
 
     public void addToMenu(String name, int price) {
         Item newItem = new Item(name,price);
         menu.add(newItem);
     }
-   /* public void addItemListToMenu(Item newItem) {
-        //Item newItem = new Item(name,price);
-        selectedItems.add(newItem);
-    }*/
+    public void addItemListToMenu(Item newItem) {
+        //selectedItems.add(newItem);
+    }
     public void removeFromMenu(String itemName) throws itemNotFoundException {
 
         Item itemToBeRemoved = findItemByName(itemName);

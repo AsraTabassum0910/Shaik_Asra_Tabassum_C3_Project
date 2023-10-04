@@ -77,7 +77,7 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    /*@Test
+    @Test
     public void calculating_final_price_for_selected_items_should_display_correct_amount(){
 
         restaurant.addToMenu("Sweet Corn Soup",150);
@@ -110,5 +110,5 @@ class RestaurantTest {
 
         int totalPrice = 100; //test data
         Assertions.assertNotEquals(totalPrice,restaurant.findTotalPrice());
-}*/
+}
 }
