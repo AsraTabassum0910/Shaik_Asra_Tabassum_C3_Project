@@ -42,9 +42,9 @@ public class Restaurant {
     }
     public int findTotalPrice(){
         int totalPrice = 0;
-        /*for(Item item: selectedItems) {
+        for(Item item: selectedItems) {
             totalPrice = totalPrice + item.getPrice();
-        }*/
+        }
         return totalPrice;
     }
 
@@ -53,7 +53,7 @@ public class Restaurant {
         menu.add(newItem);
     }
     public void addItemListToMenu(Item newItem) {
-        //selectedItems.add(newItem);
+        selectedItems.add(newItem);
     }
     public void removeFromMenu(String itemName) throws itemNotFoundException {
 
